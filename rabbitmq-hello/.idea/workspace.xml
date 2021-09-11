@@ -65,10 +65,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mao.rabbitmq.seven" />
       <recent name="com.mao.rabbitmq.six" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DirectLogs">
+  <component name="RunManager" selected="Application.EmitLogTopic">
     <configuration name="Consumer" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.one.Consumer" />
       <module name="rabbitmq-hello" />
@@ -95,25 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmitLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.five.EmitLog" />
+    <configuration name="EmitLogTopic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.seven.EmitLogTopic" />
       <module name="rabbitmq-hello" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mao.rabbitmq.five.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReceiveLogsDirect01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.six.ReceiveLogsDirect01" />
-      <module name="rabbitmq-hello" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mao.rabbitmq.six.*" />
+          <option name="PATTERN" value="com.mao.rabbitmq.seven.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +122,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.three.Task2" />
+    <configuration name="ReceiveLogsTopic01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.seven.ReceiveLogsTopic01" />
       <module name="rabbitmq-hello" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mao.rabbitmq.three.*" />
+          <option name="PATTERN" value="com.mao.rabbitmq.seven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReceiveLogsTopic02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.seven.ReceiveLogsTopic02" />
+      <module name="rabbitmq-hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mao.rabbitmq.seven.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,19 +161,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Consumer" />
-      <item itemvalue="Application.Task2" />
-      <item itemvalue="Application.EmitLog" />
-      <item itemvalue="Application.ReceiveLogsDirect01" />
       <item itemvalue="Application.ReceiveLogsDirect02" />
       <item itemvalue="Application.DirectLogs" />
+      <item itemvalue="Application.ReceiveLogsTopic01" />
+      <item itemvalue="Application.ReceiveLogsTopic02" />
+      <item itemvalue="Application.EmitLogTopic" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EmitLogTopic" />
+        <item itemvalue="Application.ReceiveLogsTopic02" />
+        <item itemvalue="Application.ReceiveLogsTopic01" />
         <item itemvalue="Application.DirectLogs" />
         <item itemvalue="Application.ReceiveLogsDirect02" />
-        <item itemvalue="Application.ReceiveLogsDirect01" />
-        <item itemvalue="Application.Task2" />
-        <item itemvalue="Application.EmitLog" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +189,7 @@
       <workItem from="1631197848607" duration="3317000" />
       <workItem from="1631236684870" duration="10529000" />
       <workItem from="1631328172470" duration="14000" />
-      <workItem from="1631335054549" duration="2053000" />
+      <workItem from="1631335054549" duration="5550000" />
     </task>
     <servers />
   </component>
@@ -216,29 +217,29 @@
       <screen x="0" y="0" width="1493" height="893" />
     </state>
     <state x="776" y="204" key="FileChooserDialogImpl/0.0.1493.893@0.0.1493.893" timestamp="1631090732364" />
-    <state width="685" height="261" key="GridCell.Tab.0.bottom" timestamp="1631288288531">
+    <state width="734" height="261" key="GridCell.Tab.0.bottom" timestamp="1631352862250">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="685" height="261" key="GridCell.Tab.0.bottom/0.0.1493.893@0.0.1493.893" timestamp="1631288288531" />
-    <state width="685" height="261" key="GridCell.Tab.0.center" timestamp="1631288288531">
+    <state width="734" height="261" key="GridCell.Tab.0.bottom/0.0.1493.893@0.0.1493.893" timestamp="1631352862250" />
+    <state width="734" height="261" key="GridCell.Tab.0.center" timestamp="1631352862250">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="685" height="261" key="GridCell.Tab.0.center/0.0.1493.893@0.0.1493.893" timestamp="1631288288531" />
-    <state width="685" height="261" key="GridCell.Tab.0.left" timestamp="1631288288531">
+    <state width="734" height="261" key="GridCell.Tab.0.center/0.0.1493.893@0.0.1493.893" timestamp="1631352862250" />
+    <state width="734" height="261" key="GridCell.Tab.0.left" timestamp="1631352862250">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="685" height="261" key="GridCell.Tab.0.left/0.0.1493.893@0.0.1493.893" timestamp="1631288288531" />
-    <state width="685" height="261" key="GridCell.Tab.0.right" timestamp="1631288288531">
+    <state width="734" height="261" key="GridCell.Tab.0.left/0.0.1493.893@0.0.1493.893" timestamp="1631352862250" />
+    <state width="734" height="261" key="GridCell.Tab.0.right" timestamp="1631352862250">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="685" height="261" key="GridCell.Tab.0.right/0.0.1493.893@0.0.1493.893" timestamp="1631288288531" />
+    <state width="734" height="261" key="GridCell.Tab.0.right/0.0.1493.893@0.0.1493.893" timestamp="1631352862250" />
     <state x="455" y="42" key="SettingsEditor" timestamp="1631198089813">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
     <state x="455" y="42" key="SettingsEditor/0.0.1493.893@0.0.1493.893" timestamp="1631198089813" />
-    <state x="667" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1631260462929">
+    <state x="667" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1631352662033">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state x="667" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1493.893@0.0.1493.893" timestamp="1631260462929" />
+    <state x="667" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1493.893@0.0.1493.893" timestamp="1631352662033" />
   </component>
 </project>
