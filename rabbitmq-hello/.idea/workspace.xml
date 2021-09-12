@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="253b8bcb-60bb-4adc-a29d-9ccef6b108f4" name="Default Changelist" comment="" />
+    <list default="true" id="253b8bcb-60bb-4adc-a29d-9ccef6b108f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../springboot-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-rabbitmq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springboot-rabbitmq/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-rabbitmq/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +56,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -70,7 +74,7 @@
       <recent name="com.mao.rabbitmq.six" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Consumer02">
+  <component name="RunManager" selected="Spring Boot.SpringbootRabbitmqApplication">
     <configuration name="Consumer" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.one.Consumer" />
       <module name="rabbitmq-hello" />
@@ -160,6 +164,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpringbootRabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springboot-rabbitmq" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mao.rabbitmq.SpringbootRabbitmqApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Consumer" />
       <item itemvalue="Application.ReceiveLogsTopic02" />
@@ -167,6 +178,7 @@
       <item itemvalue="Application.Consumer01" />
       <item itemvalue="Application.Producer" />
       <item itemvalue="Application.Consumer02" />
+      <item itemvalue="Spring Boot.SpringbootRabbitmqApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -192,7 +204,7 @@
       <workItem from="1631328172470" duration="14000" />
       <workItem from="1631335054549" duration="10875000" />
       <workItem from="1631412563815" duration="258000" />
-      <workItem from="1631412834853" duration="379000" />
+      <workItem from="1631412834853" duration="5519000" />
     </task>
     <servers />
   </component>
@@ -236,10 +248,10 @@
       <screen x="0" y="0" width="1493" height="893" />
     </state>
     <state width="820" height="261" key="GridCell.Tab.0.right/0.0.1493.893@0.0.1493.893" timestamp="1631368303816" />
-    <state x="455" y="42" key="SettingsEditor" timestamp="1631413216886">
+    <state x="455" y="42" key="SettingsEditor" timestamp="1631413612045">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state x="455" y="42" key="SettingsEditor/0.0.1493.893@0.0.1493.893" timestamp="1631413216886" />
+    <state x="455" y="42" key="SettingsEditor/0.0.1493.893@0.0.1493.893" timestamp="1631413612045" />
     <state x="269" y="89" key="new project wizard" timestamp="1631413201193">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
