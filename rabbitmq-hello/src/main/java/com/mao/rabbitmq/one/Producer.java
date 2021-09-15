@@ -1,10 +1,13 @@
 package com.mao.rabbitmq.one;
 
+import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.TimeoutException;
 
 /**
@@ -39,18 +42,29 @@ public class Producer {
          * 4.是否自动删除，最后一个消费者端开连接以后，该队列是否自动删除，true：自动删除，false：不自动删除
          * 5.其他参数
          */
-        channel.queueDeclare(QUEUE_NAME, false, false, false,null);
-        // 发消息
-        String message = "hello world";
+        Map<String, Object> arguments = new HashMap<>();
+        // 官方允许的优先级是 0-255 之间，此处设置为 10  允许优先级范围为 0-10   不要设置过大，浪费 CPU 与内存
+        arguments.put("x-max-priority", 10);
+        channel.queueDeclare(QUEUE_NAME, true, false, false,arguments);
 
-        /**
-         * 发送一个消息
-         * 1.发送到哪个交换机
-         * 2.路由的 key 值是哪个 本次是队列的名称
-         * 3.其他参数信息
-         * 4.发送消息的消息体
-         */
-        channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
-        System.out.println("消息发送完毕");
+        for (int i = 1; i < 11; i++) {
+            // 发消息
+            String message = "info" + i;
+            /**
+             * 发送一个消息
+             * 1.发送到哪个交换机
+             * 2.路由的 key 值是哪个 本次是队列的名称
+             * 3.其他参数信息
+             * 4.发送消息的消息体
+             */
+            if (i == 5) {
+                AMQP.BasicProperties properties = new AMQP.BasicProperties()
+                        .builder().priority(5).build();
+                channel.basicPublish("", QUEUE_NAME, properties, message.getBytes());
+            }else {
+                channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
+            }
+        }
+        System.out.println("消息发送成功");
     }
 }
