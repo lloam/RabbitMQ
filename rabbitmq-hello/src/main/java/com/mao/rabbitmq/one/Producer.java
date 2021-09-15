@@ -43,6 +43,7 @@ public class Producer {
          * 5.其他参数
          */
         Map<String, Object> arguments = new HashMap<>();
+
         // 官方允许的优先级是 0-255 之间，此处设置为 10  允许优先级范围为 0-10   不要设置过大，浪费 CPU 与内存
         arguments.put("x-max-priority", 10);
         channel.queueDeclare(QUEUE_NAME, true, false, false,arguments);
