@@ -23,7 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="253b8bcb-60bb-4adc-a29d-9ccef6b108f4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/one/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/one/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/one/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/one/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/three/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/three/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/three/Worker03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/three/Worker03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/utils/RabbitMQUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mao/rabbitmq/utils/RabbitMQUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,38 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Consumer01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.eight.Consumer01" />
-      <module name="rabbitmq-hello" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mao.rabbitmq.eight.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Consumer02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.eight.Consumer02" />
       <module name="rabbitmq-hello" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.mao.rabbitmq.eight.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmitLogTopic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.seven.EmitLogTopic" />
-      <module name="rabbitmq-hello" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mao.rabbitmq.seven.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,13 +135,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.three.Task2" />
+      <module name="rabbitmq-hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mao.rabbitmq.three.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Worker03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mao.rabbitmq.three.Worker03" />
+      <module name="rabbitmq-hello" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mao.rabbitmq.three.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,20 +183,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.Consumer" />
-      <item itemvalue="Application.EmitLogTopic" />
-      <item itemvalue="Application.Consumer01" />
       <item itemvalue="Application.Producer" />
       <item itemvalue="Application.Consumer02" />
-      <item itemvalue="Spring Boot.SpringbootRabbitmqApplication" />
       <item itemvalue="Application.Producer (1)" />
+      <item itemvalue="Application.Task2" />
+      <item itemvalue="Application.Worker03" />
+      <item itemvalue="Spring Boot.SpringbootRabbitmqApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Worker03" />
+        <item itemvalue="Application.Task2" />
         <item itemvalue="Application.Producer (1)" />
         <item itemvalue="Application.Consumer02" />
         <item itemvalue="Application.Producer" />
-        <item itemvalue="Application.Consumer01" />
-        <item itemvalue="Application.EmitLogTopic" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +216,8 @@
       <workItem from="1631412563815" duration="258000" />
       <workItem from="1631412834853" duration="9845000" />
       <workItem from="1631586804209" duration="8557000" />
-      <workItem from="1631694470670" duration="2118000" />
+      <workItem from="1631694470670" duration="5203000" />
+      <workItem from="1631757508555" duration="1436000" />
     </task>
     <servers />
   </component>
@@ -243,38 +249,38 @@
       <screen x="0" y="0" width="1493" height="893" />
     </state>
     <state x="776" y="204" key="FileChooserDialogImpl/0.0.1493.893@0.0.1493.893" timestamp="1631090732364" />
-    <state width="1328" height="279" key="GridCell.Tab.0.bottom" timestamp="1631696944479">
+    <state width="1271" height="276" key="GridCell.Tab.0.bottom" timestamp="1631720248621">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1328" height="279" key="GridCell.Tab.0.bottom/0.0.1493.893@0.0.1493.893" timestamp="1631696944479" />
-    <state width="1328" height="279" key="GridCell.Tab.0.center" timestamp="1631696944479">
+    <state width="1271" height="276" key="GridCell.Tab.0.bottom/0.0.1493.893@0.0.1493.893" timestamp="1631720248621" />
+    <state width="1271" height="276" key="GridCell.Tab.0.center" timestamp="1631720248621">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1328" height="279" key="GridCell.Tab.0.center/0.0.1493.893@0.0.1493.893" timestamp="1631696944479" />
-    <state width="1328" height="279" key="GridCell.Tab.0.left" timestamp="1631696944478">
+    <state width="1271" height="276" key="GridCell.Tab.0.center/0.0.1493.893@0.0.1493.893" timestamp="1631720248621" />
+    <state width="1271" height="276" key="GridCell.Tab.0.left" timestamp="1631720248621">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1328" height="279" key="GridCell.Tab.0.left/0.0.1493.893@0.0.1493.893" timestamp="1631696944478" />
-    <state width="1328" height="279" key="GridCell.Tab.0.right" timestamp="1631696944479">
+    <state width="1271" height="276" key="GridCell.Tab.0.left/0.0.1493.893@0.0.1493.893" timestamp="1631720248621" />
+    <state width="1271" height="276" key="GridCell.Tab.0.right" timestamp="1631720248621">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1328" height="279" key="GridCell.Tab.0.right/0.0.1493.893@0.0.1493.893" timestamp="1631696944479" />
-    <state width="1328" height="279" key="GridCell.Tab.1.bottom" timestamp="1631696944479">
+    <state width="1271" height="276" key="GridCell.Tab.0.right/0.0.1493.893@0.0.1493.893" timestamp="1631720248621" />
+    <state width="1328" height="279" key="GridCell.Tab.1.bottom" timestamp="1631720248617">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1328" height="279" key="GridCell.Tab.1.bottom/0.0.1493.893@0.0.1493.893" timestamp="1631696944479" />
-    <state width="1328" height="279" key="GridCell.Tab.1.center" timestamp="1631696944479">
+    <state width="1328" height="279" key="GridCell.Tab.1.bottom/0.0.1493.893@0.0.1493.893" timestamp="1631720248617" />
+    <state width="1328" height="279" key="GridCell.Tab.1.center" timestamp="1631720248613">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1328" height="279" key="GridCell.Tab.1.center/0.0.1493.893@0.0.1493.893" timestamp="1631696944479" />
-    <state width="1328" height="279" key="GridCell.Tab.1.left" timestamp="1631696944479">
+    <state width="1328" height="279" key="GridCell.Tab.1.center/0.0.1493.893@0.0.1493.893" timestamp="1631720248613" />
+    <state width="1328" height="279" key="GridCell.Tab.1.left" timestamp="1631720248613">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1328" height="279" key="GridCell.Tab.1.left/0.0.1493.893@0.0.1493.893" timestamp="1631696944479" />
-    <state width="1328" height="279" key="GridCell.Tab.1.right" timestamp="1631696944479">
+    <state width="1328" height="279" key="GridCell.Tab.1.left/0.0.1493.893@0.0.1493.893" timestamp="1631720248613" />
+    <state width="1328" height="279" key="GridCell.Tab.1.right" timestamp="1631720248613">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state width="1328" height="279" key="GridCell.Tab.1.right/0.0.1493.893@0.0.1493.893" timestamp="1631696944479" />
+    <state width="1328" height="279" key="GridCell.Tab.1.right/0.0.1493.893@0.0.1493.893" timestamp="1631720248613" />
     <state x="455" y="42" key="SettingsEditor" timestamp="1631437737765">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
@@ -283,9 +289,9 @@
       <screen x="0" y="0" width="1493" height="893" />
     </state>
     <state x="269" y="89" key="new project wizard/0.0.1493.893@0.0.1493.893" timestamp="1631413201193" />
-    <state x="667" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1631419269861">
+    <state x="667" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1631697325530">
       <screen x="0" y="0" width="1493" height="893" />
     </state>
-    <state x="667" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1493.893@0.0.1493.893" timestamp="1631419269861" />
+    <state x="667" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1493.893@0.0.1493.893" timestamp="1631697325530" />
   </component>
 </project>

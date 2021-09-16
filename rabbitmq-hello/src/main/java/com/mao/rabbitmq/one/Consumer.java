@@ -12,13 +12,15 @@ import java.util.concurrent.TimeoutException;
  */
 public class Consumer {
 
-    private static final String QUEUE_NAME = "hello";
+//    private static final String QUEUE_NAME = "hello";
+    // 联邦交换机名称
+    private static final String FED_EXCHANGE = "fed_exchange";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         // 连接工厂
         ConnectionFactory factory = new ConnectionFactory();
         // 设置 host
-        factory.setHost("192.168.124.168");
+        factory.setHost("192.168.124.169");
         // 设置账号
         factory.setUsername("admin");
         // 设置密码
@@ -27,13 +29,22 @@ public class Consumer {
         Connection connection = factory.newConnection();
         // 创建信道
         Channel channel = connection.createChannel();
-        // 接收消息
-        DeliverCallback deliverCallback = (consumerTag, message) -> {
-            System.out.println(new String(message.getBody()));
-        };
-        CancelCallback cancelCallback = (consumerTag) -> {
-            System.out.println("消息消费中断");
-        };
+
+        // 联邦交换机
+        // 声明交换机
+        channel.exchangeDeclare(FED_EXCHANGE, BuiltinExchangeType.DIRECT);
+        // 声明队列
+        channel.queueDeclare("node2_queue", true, false, false, null);
+        // 绑定
+        channel.queueBind("node2_queue", FED_EXCHANGE, "routeKey");
+
+//        // 接收消息
+//        DeliverCallback deliverCallback = (consumerTag, message) -> {
+//            System.out.println(new String(message.getBody()));
+//        };
+//        CancelCallback cancelCallback = (consumerTag) -> {
+//            System.out.println("消息消费中断");
+//        };
         /**
          * 消费消息
          * 1.消费哪个队列的消息
@@ -41,6 +52,6 @@ public class Consumer {
          * 3.消费者成功消费消息的回调
          * 4.消费者取消消费消息的回调
          */
-        channel.basicConsume(QUEUE_NAME, true, deliverCallback, cancelCallback);
+        // channel.basicConsume(QUEUE_NAME, true, deliverCallback, cancelCallback);
     }
 }

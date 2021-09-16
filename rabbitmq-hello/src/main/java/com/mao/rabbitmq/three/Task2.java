@@ -14,7 +14,8 @@ import java.util.concurrent.TimeoutException;
  * Description: 生产者：生产消息，消息未应答将重新进入队列
  */
 public class Task2 {
-    public static final String TASK_QUEUE_NAME = "ack_queue";
+//    public static final String TASK_QUEUE_NAME = "ack_queue";
+    public static final String TASK_QUEUE_NAME = "mirror_hello";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         Channel channel = RabbitMQUtils.getChannel();

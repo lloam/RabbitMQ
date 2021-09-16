@@ -17,7 +17,7 @@ public class RabbitMQUtils {
         // 连接工厂
         ConnectionFactory factory = new ConnectionFactory();
         // 设置主机
-        factory.setHost("192.168.124.168");
+        factory.setHost("192.168.124.169");
         // 设置用户名
         factory.setUsername("admin");
         // 设置密码

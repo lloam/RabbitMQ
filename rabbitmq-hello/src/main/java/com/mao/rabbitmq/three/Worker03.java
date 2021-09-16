@@ -15,7 +15,8 @@ import java.util.concurrent.TimeoutException;
  * Description: 消息在手动应答时不丢失，放回队列中重新消费
  */
 public class Worker03 {
-    public static final String TASK_QUEUE_NAME = "ack_queue";
+//    public static final String TASK_QUEUE_NAME = "ack_queue";
+    public static final String TASK_QUEUE_NAME = "mirror_hello";
 
     public static void main(String[] args) throws IOException, TimeoutException {
         Channel channel = RabbitMQUtils.getChannel();
